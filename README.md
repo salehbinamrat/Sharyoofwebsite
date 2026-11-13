@@ -21,7 +21,7 @@
 
 ## إعداد المستودع الجديد (دون مساس بالقديم)
 
-1. أنشئ مستودعا مستقلا باسم `sharyoof-portal-v2` في حساب GitHub الصحيح، ثم ارفع **محتويات** حزمة المشروع إليه بحيث يكون `package.json` في جذر المستودع.
+1. المستودع المستقل المستخدم هو [`salehbinamrat/Sharyoofwebsite`](https://github.com/salehbinamrat/Sharyoofwebsite)، وملفات المشروع موجودة في جذره، بما فيها `package.json`.
 2. في المستودع الجديد فقط، افتح `Settings → Secrets and variables → Actions → New repository secret` وأضف ثلاثة Secrets:
    - `CLOUDFLARE_ACCOUNT_ID`: معرف حساب Cloudflare الذي يملك Worker الجديد.
    - `CLOUDFLARE_API_TOKEN`: رمز API بصلاحيات حساب **Workers Scripts Edit** و**D1 Write** على الحساب المعني.
