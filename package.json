@@ -1,0 +1,17 @@
+{
+  "name": "sharyoof-portal-v2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/worker.js && node --check public/app.js && node --check scripts/provision.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "npm run check && npm test",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --config wrangler.generated.toml",
+    "db:migrate": "wrangler d1 migrations apply sharyoof-portal-v2-db --remote --config wrangler.generated.toml",
+    "provision": "node scripts/provision.mjs"
+  },
+  "devDependencies": { "wrangler": "^4.45.0" },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c1532">
+  <meta name="description" content="بوابة شريوف: برامج ويندوز، صفحات الهوتسبوت، صور المشاريع وشروحات الاستخدام وروابط التنزيل الرسمية.">
+  <title>بوابة شريوف | البرامج والهوتسبوت</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="بوابة شريوف - الرئيسية"><span class="logo">ش</span><span><b>بوابة شريوف</b><small>SHARYOOF PORTAL</small></span></a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a href="#home" data-nav="home">الرئيسية</a>
+        <a href="#programs" data-nav="programs">البرامج</a>
+        <a href="#hotspot" data-nav="hotspot">الهوتسبوت</a>
+        <a href="#videos" data-nav="videos">الفيديوهات</a>
+        <a href="#about" data-nav="about">عن البوابة</a>
+      </nav>
+      <div class="header-actions"><a class="admin-link" href="#admin">لوحة الإدارة <span>↗</span></a><button id="nav-toggle" class="nav-toggle" aria-label="فتح القائمة">☰</button></div>
+    </header>
+    <main id="app" aria-live="polite"><div class="loading">جار تجهيز البوابة...</div></main>
+    <footer><div><span class="footer-logo">ش</span><b>بوابة شريوف</b><p>مشاريعك في مكان واحد، تنزيلات واضحة ومعاينات منظمة.</p></div><div><span>البرامج • الهوتسبوت • الفيديوهات</span><small>© <span id="year"></span> جميع الحقوق محفوظة</small></div></footer>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

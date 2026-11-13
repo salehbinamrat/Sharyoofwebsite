@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+wrangler.generated.toml
+.env
+.dev.vars
+.DS_Store
+*.log
+*.zip
